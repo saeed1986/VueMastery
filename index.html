@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style.css" />
 
   <body>
-    <div class="nav-bar"></div>
+    <div class="nav-bar">
+      <h1 class="header">SaeedBaBa</h1></div>
     <div id="app">
       <div class="product">
         <div class="product-image">
@@ -23,10 +24,31 @@
           <ul>
             <li v-for="detail in details">{{ detail }}</li>
           </ul>
-          <div v-for="variant in variants" :key="variant.variantId">
-            <p>{{ variant.variantColor }}</p>
+          <div class="color-box" v-for="variant in variants" :key="variant.variantId"
+          :style="{ backgroundColor: variant.variantColor}"
+          @mouseover="updateProduct(variant.variantImage)">
+
+           
+
+           
           </div>
+
+
+          <div class="cart">
+          <p>Cart({{ cart }})</p>
+          
+
+          <button v-on:click="addToCart">Add to Cart</button>
+          <div class="button-upper" >
+          <button v-on:click="removeFromCart">Remove from Cart</button></div>
         </div>
+        </div>
+      </div>
+      
+      </div>
+
+
+
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

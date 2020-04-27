@@ -1,7 +1,15 @@
 body {
   font-family: tahoma;
   color: #282828;
-  margin: 0px;
+  margin: 17px;
+}
+
+.header {
+  padding: 9px 5px;
+  text-align: center;
+  color: whitesmoke;
+  border: 1px #282828;
+  margin: auto;
 }
 
 .nav-bar {
@@ -11,13 +19,15 @@ body {
 }
 
 .product {
+  background-color: rgba(161, 166, 199, 0.5);
   display: flex;
   flex-flow: wrap;
   padding: 1rem;
 }
 
 img {
-  border: 1px solid #d8d8d8;
+  border: 2px solid #d8d8d8;
+  border-radius: 15px;
   width: 70%;
   margin: 40px;
   box-shadow: 0px 0.5px 1px #d8d8d8;
@@ -30,6 +40,7 @@ img {
 .product-image,
 .product-info {
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 50%;
 }
 
@@ -40,9 +51,11 @@ img {
 }
 
 .cart {
+  background-color: white;
   margin-right: 25px;
   float: right;
-  border: 1px solid #d8d8d8;
+  border: 3px solid #d8d8d8;
+  border-radius: 5px;
   padding: 5px 20px;
 }
 
@@ -56,12 +69,24 @@ button {
   font-size: 14px;
 }
 
+.button-upper {
+  text-align: center;
+  padding: 1px 1px;
+  margin: 1px 1px 5px -2px;
+}
+
+.pclass {
+  width: 10%;
+  margin: 1px 1px;
+  padding: 1px 1px;
+}
+
 .disabledButton {
   background-color: #d8d8d8;
 }
 
 .review-form {
-  width: 400px;
+  width: 4px;
   padding: 20px;
   margin: 40px;
   border: 1px solid #d8d8d8;
