@@ -9,7 +9,7 @@
 
   <body>
     <div class="nav-bar">
-      <h1 class="header">SaeedBaBa</h1></div>
+      <h1 class="header">B&S</h1></div>
     <div id="app">
       <div class="product">
         <div class="product-image">
@@ -38,7 +38,7 @@
           <p>Cart({{ cart }})</p>
           
 
-          <button v-on:click="addToCart">Add to Cart</button>
+          <button v-on:click="addToCart" :style="blockIt">Add to Cart</button>
           <div class="button-upper" >
           <button v-on:click="removeFromCart">Remove from Cart</button></div>
         </div>

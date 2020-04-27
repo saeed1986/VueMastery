@@ -16,10 +16,11 @@ body {
   background: linear-gradient(-90deg, #84cf6a, #16c0b0);
   height: 60px;
   margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 .product {
-  background-color: rgba(161, 166, 199, 0.5);
+  background-color: white;
   display: flex;
   flex-flow: wrap;
   padding: 1rem;
@@ -51,8 +52,8 @@ img {
 }
 
 .cart {
-  background-color: white;
-  margin-right: 25px;
+  background-color: yellow;
+  margin: 1px, 1px, 1px, 1px;
   float: right;
   border: 3px solid #d8d8d8;
   border-radius: 5px;
